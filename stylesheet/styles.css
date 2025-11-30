@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
+
+
+.flexRow
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.avaContainer
+{
+    width: 393px;
+    height: 852px;
+    background-color: white;
+    border: 2px solid black;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.appHeader
+{
+    width: 100%;
+    height: 106px;
+    background-color: #163055;
+
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.appHeader h1
+{
+    font-family: "alexandria";
+    font-size: 28px;
+    color: white;
+}
+
+.btnContainer
+{
+    width: 100%;
+
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.medicationBtn
+{
+    width: 345px;
+    height: 214px;
+    border: 4px solid #163055;
+    border-radius: 8px;
+    margin: 10px 0 10px 0;
+    box-shadow: 0 3px 5px rgba(1, 1, 1, .25);
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.medicationBtn:active
+{
+    background-color: #163055;
+}
+
+.medicationBtn h2
+{
+    font-family: "alexandria";
+    font-size: 20px;
+    color: #163055;
+}
+
+.medicationBtn:active h2
+{
+    color: white;
+}
+
+.homeSquareBtns
+{
+    width: 165px;
+    height: 165px;
+    border: #163055 4px solid;
+    border-radius: 8px;
+    margin: 4px;
+    box-shadow: 0 3px 5px rgba(1, 1, 1, .25);
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeSquareBtns:active 
+{
+    background-color: #163055;
+}
+
+.homeSquareBtns h2
+{
+    font-family: "alexandria";
+    color: #163055;
+    margin: 2px;
+    font-size: 20px;
+}
+
+.homeSquareBtns:active h2
+{
+    color: white;
+}
+
+.footerBtnCont
+{
+    background-color: #163055;
+    width: 100%;
+    height: 116px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footerBtn
+{   
+
+    font-family: 'alexandria';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerBtn img
+{
+    width: 56px;
+    height: 56px;
+}
+
+.footerBtn p
+{
+    margin: 4px;
+    color: white;
+    font-family: 'alexandria';
+    font-size: 16px;
+}

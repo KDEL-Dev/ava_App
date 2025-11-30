@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet/styles.css">
+    <script src="script.js"></script>
+    <title>ava_App</title>
+</head>
+<body>
+    <div class="avaContainer">
+        <div class="appHeader">
+            <h1> Home</h1>
+        </div>
+        <div class="btnContainer">
+            <div class="medicationBtn"
+                        onmousedown="changeMedsImg()" 
+                        onmouseup="returnMedsImg()" 
+                        onmouseleave="returnMedsImg()" 
+                        ontouchstart="changeMedsImg()"                   
+                        ontouchend="returnMedsImg()">
+                <img id="medsImg" src="img/icons/carbon_pills.png" alt="medicineIcon">
+                <h2>Medication</h2>
+            </div> 
+            <div class="secondBtnContainer">
+                <div class="flexRow">
+                    <div class="homeSquareBtns"
+                        onmousedown="changeDeviceImg()" 
+                        onmouseup="returnDeviceImg()" 
+                        onmouseleave="returnDeviceImg()" 
+                        ontouchstart="changeDeviceImg()"                   
+                        ontouchend="returnDeviceImg()">
+                        <img id="deviceImg" src="img/icons/devices.png" alt="">
+                        <h2>Devices</h2>
+                    </div>
+                    <div class="homeSquareBtns"
+                        onmousedown="changeTaskImg()" 
+                        onmouseup="returnTaskImg()" 
+                        onmouseleave="returnTaskImg()" 
+                        ontouchstart="changeTaskImg()"                   
+                        ontouchend="returnTaskImg()">
+                        <img id="taskImg" src="img/icons/tasks.png" alt="">
+                        <h2>Tasks</h2>
+                    </div>
+                </div>
+                <div class="flexRow">
+                    <div class="homeSquareBtns"
+                        onmousedown="changeTransportImg()" 
+                        onmouseup="returnTransportImg()" 
+                        onmouseleave="returnTransportImg()" 
+                        ontouchstart="changeTransportImg()"                   
+                        ontouchend="returnTransportImg()">
+                        <img id="transportImg" src="/img/icons/transport.png" alt="">
+                        <h2>Transport</h2>
+                    </div>
+                    <div class="homeSquareBtns"
+                        onmousedown="changeReadImg()" 
+                        onmouseup="returnReadImg()" 
+                        onmouseleave="returnReadImg()" 
+                        ontouchstart="changeReadImg()"                   
+                        ontouchend="returnReadImg()">
+                        <img id="readImg" src="/img/icons/readAloud.png" alt="">
+                        <h2>Read Aloud</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerBtnCont">
+            <div class="footerBtn">
+                <img src="img/icons/settings.png" alt="">
+                <p>Settings</p>
+            </div>
+            <div class="footerBtn">
+                <img src="img/icons/tabler_microphone-filled.png" alt="">
+                <p>Read Aloud</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
