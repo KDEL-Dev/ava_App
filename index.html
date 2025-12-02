@@ -10,15 +10,16 @@
 <body>
     <div class="avaContainer">
         <div class="appHeader">
-            <h1> Home</h1>
+            <h1 id="headerText"> Home</h1>
         </div>
-        <div class="btnContainer">
+        <div class="btnContainer" id="homeMenuPage">
             <div class="medicationBtn"
                         onmousedown="changeMedsImg()" 
                         onmouseup="returnMedsImg()" 
                         onmouseleave="returnMedsImg()" 
                         ontouchstart="changeMedsImg()"                   
-                        ontouchend="returnMedsImg()">
+                        ontouchend="returnMedsImg()"
+                        onclick="openMedicationPage()">
                 <img id="medsImg" src="img/icons/carbon_pills.png" alt="medicineIcon">
                 <h2>Medication</h2>
             </div> 
@@ -65,14 +66,103 @@
                 </div>
             </div>
         </div>
-        <div class="footerBtnCont">
-            <div class="footerBtn">
-                <img src="img/icons/settings.png" alt="">
-                <p>Settings</p>
+
+        <div id="medicationPage">
+            <div id="addEditMedsCont">
+                <div class="addEditMedsBtns">
+                    <img src="/img/icons/addMeds.png" alt="">
+                    <h3>Add Meds</h3>
+                </div>
+                <div class="addEditMedsBtns">
+                    <img src="/img/icons/icon-park-outline_pencil.png" alt="">
+                    <h3>Edit Meds</h3>
+                </div>
             </div>
-            <div class="footerBtn">
-                <img src="img/icons/tabler_microphone-filled.png" alt="">
-                <p>Read Aloud</p>
+            <div id="currentDateCont">
+                <h3>Current Date:</h3>
+                <div class="dateScrollWrapper">
+                    <div class="dateScroll">
+                        <div class="dateBtn">
+                            <h2>Sun</h2>
+                            <h3>Nov19</h3>
+                        </div>
+                        <div class="dateBtn">
+                            <h2>Mon</h2>
+                            <h3>Nov20</h3>
+                        </div>
+                        <div class="dateBtn">
+                            <h2>Tue</h2>
+                            <h3>Nov21</h3>
+                        </div>
+                        <div class="dateBtn">
+                            <h2>Wed</h2>
+                            <h3>Nov22</h3>
+                        </div>
+                        <div class="dateBtn" id="todayBtn">
+                            <h2>Thu</h2>
+                            <h3>Nov23</h3>
+                        </div>
+                        <div class="dateBtn">
+                            <h2>Fri</h2>
+                            <h3>Nov24</h3>
+                        </div>
+                        <div class="dateBtn">
+                            <h2>Sat</h2>
+                            <h3>Nov25</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="medListCont">
+                <div class="medBtn" id="medBtn5">
+                    <img src="/img/icons/medList.png" alt="">
+                    <h2>Evening Medicine</h2>
+                </div>
+                <div class="medBtn" id="medBtn4">
+                    <img src="/img/icons/medList.png" alt="">
+                    <h2>Medicine Before Bed</h2>
+                </div>
+                <div class="medBtn" id="medBtn3">
+                    <img src="/img/icons/medList.png" alt="">
+                    <h2>Midday Medicine</h2>
+                </div>
+                <div class="medBtn" id="medBtn2">
+                    <img src="/img/icons/medList.png" alt="">
+                    <h2>Meds after Lunch</h2>
+                </div>
+                <div class="medBtn" id="medBtn1">
+                    <img src="/img/icons/medList.png" alt="">
+                    <h2>Meds after Breakfast</h2>
+                </div>
+            </div>
+        </div>
+        <div class="footerBtnCont">
+            <div id="homeFooterBtn">
+                <div class="footerBtn">
+                    <img src="img/icons/settings.png" alt="">
+                    <p>Settings</p>
+                </div>
+                <div class="footerBtn">
+                    <img src="img/icons/tabler_microphone-filled.png" alt="">
+                    <p>Read Aloud</p>
+                </div>
+            </div>
+        <!-- Medication Footer Buttons -->
+            <div class="inPageButtons" id="inPageButtons">
+
+                <div class="footerBtn" id="backBtn"
+                    onclick="medsBackBtn()">
+                    <img src="/img/icons/backBtn.png" alt="">
+                    <p>BACK</p>
+                </div>
+                <div class="footerBtn">
+                    <img src="/img/icons/homeBtn.png" alt="">
+                    <p>HOME</p>
+                </div>
+                <div class="footerBtn">
+                    <img src="/img/icons/askAvaBtn.png" alt="">
+                    <p>ASK AVA</p>
+                </div>
             </div>
         </div>
     </div>

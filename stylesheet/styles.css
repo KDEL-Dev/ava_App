@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
 
+body
+{
+    font-family: "alexandria";
+    color: #163055;
+}
 
 .flexRow
 {
@@ -11,6 +16,7 @@
 {
     width: 393px;
     height: 852px;
+    overflow-y: hidden;
     background-color: white;
     border: 2px solid black;
 
@@ -18,6 +24,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
+
 }
 
 .appHeader
@@ -35,7 +42,15 @@
 {
     font-family: "alexandria";
     font-size: 28px;
+    font-weight: 300;
     color: white;
+}
+
+/* Toggle page while Building */
+#homeMenuPage
+{
+    /* default is flex */
+    display: none;
 }
 
 .btnContainer
@@ -116,13 +131,209 @@
     color: white;
 }
 
-.footerBtnCont
+/* MEDICATION PAGE */
+#medicationPage
 {
-    background-color: #163055;
-    width: 100%;
-    height: 116px;
+    max-width: 100%;
+
+    /* default is none */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+#addEditMedsCont
+{
+    margin-top: 16px;
 
     display: flex;
+    flex-direction: row;
+}
+
+.addEditMedsBtns
+{
+    width: 164px;
+    height: 98px;
+    border: 2px solid #BDBFC0;
+    margin: 0 5px;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px rgba(1, 1, 1, .25);
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.addEditMedsBtns h3
+{
+    font-family: "alexandria";
+    font-size: 1em;
+    font-weight: 500;
+    margin: 0;
+}
+
+#currentDateCont
+{
+    margin-top: 18px;
+    height: 120px;
+    width: 100%;
+ 
+}
+
+#currentDateCont h3
+{
+    text-align: center;
+    font-weight: 500;
+    margin: 0;
+}
+
+.dateScrollWrapper
+{
+    overflow: visible;
+    width: 100%;
+}
+
+.dateScroll {
+    overflow-x: auto;       /* still scrollable */
+    /* overflow-y: hidden;      */
+    box-sizing: border-box;
+    scroll-snap-type: x mandatory;
+    margin-top: 16px;
+
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+
+    -ms-overflow-style: none;  /* IE & Edge */
+    scrollbar-width: none;     /* Firefox */
+
+    padding-left: 150px;   /* add space so MON can center */
+    padding-right: 150px;  /* add space so FRI can center */
+}
+
+/* Chrome, Safari, Opera */
+.dateScroll::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+.dateBtn
+{
+    width: 90px;
+    height: 84px;
+    border: #BDBFC0 2px solid;
+    border-radius: 10px;
+    margin: 0 8px;
+    background-color: #E8EBEE;
+    box-shadow: 0 5px 5px rgba(1, 1, 1, .1);
+    /* flex I think is making sure the size of the buttons won't change */
+    flex: 0 0 auto;
+    cursor: pointer;
+    scroll-snap-align: center;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.dateBtn h2,
+.dateBtn h3
+{
+    font-family: "alexandria";
+    font-size: 1.5em;
+    margin: 0 6.5px;
+}
+
+.dateBtn h3
+{
+    font-weight: 500;
+    font-size: 1em;
+
+}
+
+.dateBtn.active 
+{
+    width: 105px;
+    height: 98px;
+    background-color: white;
+    border:#65A898 4px solid;
+    box-shadow: #65A898 0 0 8px;
+
+}
+
+#medListCont
+{
+    margin-top: 24px;
+    height: 365px;
+    overflow-y: auto;
+    /* Removal of scrollbar from ChatGpt */
+    scrollbar-width: none;      /* Firefox */
+    -ms-overflow-style: none;   /* IE / Edge */
+
+    display: flex;
+    flex-direction: column;
+}
+
+.pageContent::-webkit-scrollbar {
+    display: none;              /* Chrome / Safari */
+}
+
+.medBtn
+{
+    width: 345px;
+    min-height: 82px;
+    border: #65A898 2px solid;
+    border-radius: 10px;
+    margin: 7px 0;
+    box-shadow: 0 5px 5px rgba(1, 1, 1, .33);
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+}
+
+.medBtn h2
+{
+    font-family: "alexandria";
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.medBtn.active
+{
+    background: linear-gradient(to bottom, #ffffff, #CAE3DD);
+}
+.medBtn.active h2
+{
+    color: #65A898;
+}
+
+
+/* FOOTER BUTTONS */
+.footerBtnCont
+{
+    width: 100%;
+
+    height: 116px;
+
+    background-color: #163055;
+}
+
+#homeFooterBtn
+{
+    
+    width: 100%;
+    height: 100%;
+    /* default is flex */
+    display: none;
     justify-content: space-around;
     align-items: center;
 }
@@ -147,4 +358,28 @@
     color: white;
     font-family: 'alexandria';
     font-size: 16px;
+}
+
+/* ***** Medication Page ***** */
+
+.inPageButtons
+{
+    width: 100%;
+    height: 100%;
+
+    /* default is none */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inPageButtons p
+{
+    font-size: 1em;
+}
+
+.footerBtn
+{
+    cursor: pointer;
 }
