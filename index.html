@@ -161,7 +161,7 @@
                 </div>
             </div>
         </div>
-
+<!-- medication detail page -->
         <div class="medDetailPage">
             <div class="medDetailBg">
                 <div class="medDetailTitleArea">
@@ -200,12 +200,23 @@
                 </div>
             </div>
             <div class="flexRow" id="medDetailEdge">
-                <div class="medDetailBtn">
-                    <img src="/img/icons/blueX.png" alt="">
+                <div class="medDetailBtn" id="skipBtn"
+                        onmousedown="changeSkipImg()" 
+                        onmouseup="returnSkipImg()" 
+                        onmouseleave="returnSkipImg()" 
+                        ontouchstart="changeSkipImg()"                   
+                        ontouchend="returnSkipImg()">
+                    <img id="skipImg" src="/img/icons/blueX.png" alt="">
                     <h2>Skip</h2>
                 </div>
-                <div class="medDetailBtn" id="takenBtn">
-                    <img src="/img/icons/blueCheckMark.png" alt="">
+
+                <div class="medDetailBtn" id="takenBtn"
+                        onmousedown="changeTakenImg()" 
+                        onmouseup="returnTakenImg()" 
+                        onmouseleave="returnTakenImg()" 
+                        ontouchstart="changeTakenImg()"                   
+                        ontouchend="returnTakenImg()">
+                    <img id="takenImg" src="/img/icons/blueCheckMark.png" alt="">
                     <h2>Taken</h2>
                 </div>
             </div>

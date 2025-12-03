@@ -50,7 +50,7 @@ body
 #homeMenuPage
 {
     /* default is flex */
-    display: none;
+    display: flex;
 }
 
 .btnContainer
@@ -317,11 +317,17 @@ body
     color: #65A898;
 }
 
+.medBtn1
+{
+
+}
+
 /*  Medication Details Page  */
 
 .medDetailPage
 {
-    display: flex;
+    /* default is none */
+    display: none;
     flex-direction: column;
 }
 
@@ -476,9 +482,39 @@ body
     align-items: center;
 }
 
+#skipBtn
+{
+    cursor: pointer;
+}
+
+#takenBtn
+{
+    cursor: pointer;
+}
+
+#skipBtn:active
+{
+    background-color: #163055;
+}
+
+#skipBtn:active h2
+{
+    color: white;
+}
+
 #takenBtn
 {
     background-color: #9FD5C8;
+}   
+
+#takenBtn:active
+{
+    background-color: #163055;
+}
+
+#takenBtn:active h2
+{
+    color: #9FD5C8;
 }
 
 
