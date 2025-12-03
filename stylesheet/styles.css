@@ -137,7 +137,7 @@ body
     max-width: 100%;
 
     /* default is none */
-    display: flex;
+    display: none;
     align-items: center;
     flex-direction: column;
    
@@ -298,12 +298,13 @@ body
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .medBtn h2
 {
     font-family: "alexandria";
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: 500;
 }
 
@@ -315,6 +316,171 @@ body
 {
     color: #65A898;
 }
+
+/*  Medication Details Page  */
+
+.medDetailPage
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.medDetailBg
+{
+    background-color: rgba(22, 48, 85,.2);
+    width: 345px;
+    height: 459px;
+    margin-left: 24px;
+    margin-right: 24px;
+    border-radius: 8px;
+}
+
+.medDetailTitleArea
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.medDetailTitle
+{
+
+}
+
+.medDetailBtnTop
+{
+    background-color: white;
+    width: 89px;
+    height: 78px;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.medDetailBtnTop p
+{
+    margin: 0;
+}
+
+#medDetailEdge
+{
+    /* padding-left: 24px;
+    padding-right: 24px; */
+    margin-top: 13px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.medDetailInfoArea
+{
+   display: flex;
+   flex-direction: column;
+}
+
+.medDetailInfo
+{
+    width: 306px;
+    height: 60px;
+    background-color: rgba(22, 48, 85,.2);
+    border-radius: 8px;
+    margin-bottom: 11px;
+    margin-top: 11px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.medDetailInfo p
+{
+    margin-left: 10px;
+}
+
+.medDetailBtn
+{
+    width: 165px;
+    height: 126px;
+    border: 1px solid #BDBFC0;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.medDetailBtn h2
+{
+    margin: 0;
+}
+
+.otherInstruction
+{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.otherInstruction h2
+{
+    margin: 0;
+    width: 100%;
+    margin-left: 40px;
+
+}
+
+.instructionTextArea
+{
+    background-color: white;
+    width: 305px;
+    height: 158px;
+    border-radius: 8px;
+    border: #BDBFC0 solid 1px;
+
+    display: flex;
+}
+
+.instructionTextArea h3
+{
+    margin-left: 10px;
+}
+
+.instructions
+{
+    background-color: white;
+    width: 153px;
+    height: 50px;
+    border-radius: 8px;
+    margin: 5px 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#takenBtn
+{
+    background-color: #9FD5C8;
+}
+
 
 
 /* FOOTER BUTTONS */
@@ -361,6 +527,22 @@ body
 }
 
 /* ***** Medication Page ***** */
+
+.medChecked
+{
+    width: 64px;
+    height: 64px;
+}
+
+.medChecked img
+{
+    display: none;
+}
+
+.medBtn.active .medChecked img
+{
+    display: block;
+}
 
 .inPageButtons
 {
