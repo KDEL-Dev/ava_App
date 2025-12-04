@@ -535,7 +535,7 @@ body
     width: 100%;
     height: 100%;
     /* default is flex */
-    display: none;
+    display: flex;
     justify-content: space-around;
     align-items: center;
 }
@@ -586,7 +586,7 @@ body
     height: 100%;
 
     /* default is none */
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
